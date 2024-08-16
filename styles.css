@@ -429,3 +429,19 @@ nav .close {
   margin-left: 90%;
   cursor: pointer;
 }
+
+.git {
+  margin: 10px 0 0px 0;
+  color: white;
+  font-weight: 400;
+  font-family: 'poppins', sans-serif;
+  font-size: 19px;
+  text-align: center;
+}
+
+.github-svg {
+  margin: auto;
+  color: white;
+  transform: scale(2.5);
+  margin-bottom: 10px;
+}
