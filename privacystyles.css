@@ -1,0 +1,51 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  width: 100%;
+  height: auto;
+  padding: 20px;
+  background-color: white;
+  position: fixed;
+  top: 0;
+}
+
+header b {
+  font-size: 21px;
+  color: black;
+  font-family: 'Montserrat', serif;
+  text-align: left;
+  padding-left: 15px;
+}
+
+main {
+  margin: 20px;
+  background-color: white;
+  margin-top: 10px;
+}
+
+.main-head {
+  font-size: 50px;
+  font-weight: 2000;
+  margin-top: 30%;
+}
+
+small {
+  font-size: 15px;
+  color: gray;
+}
+
+a {
+  color: black;
+}
+
+.sub-head {
+  font-size: 26px;
+}
+
+.privacy {
+  font-size: 35px;
+  font-weight: bold;
+}

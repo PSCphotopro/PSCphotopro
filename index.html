@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0044cc">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="Content-Security-Policy" content="This website uses images from imgbb.com and styles from Bootstrap.">
+    <meta name="description" content="PSCphotopro enables you to efficiently create Kerala PSC photographs and autographs that meet all requirements and specifications. It's completely free and user-friendly compared to other websites.">
+    <meta name="keywords" content="Kerala PSC, PSC photograph, PSC autograph, photo maker, autograph maker, free photo editing, compliant photograph, autograph generator, PSC application requirements, easy photo customization">
+    <meta property="og:title" content="PSCphotopro">
+    <meta property="og:description" content="Create PSC-compliant photographs and autographs effortlessly with PSCphotopro.">
+    <title>PSCphotopro</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="preload" href="https://i.ibb.co/hCJb3hH/Alice-20240814-231352-0000.png" as="image">
+    <link rel="preload" href="https://i.ibb.co/JjXn77F/20240814-232553-0000.png" as="image">
+    <link rel="preload" href="https://i.ibb.co/TTpcV6t/IMG-20240812-084251.jpg" as="image">
+    <link rel="preload" href="https://i.ibb.co/NZhwdX7/Picsart-24-08-12-09-43-39-727.jpg" as="image">
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/10.12.5/firebase-app-compat.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/10.12.5/firebase-auth-compat.js"></script>
+    <script defer src="/__/firebase/10.12.5/firebase-database-compat.js"></script>
+    <script defer src="/__/firebase/10.12.5/firebase-firestore-compat.js"></script>
+    <script defer src="/__/firebase/10.12.5/firebase-functions-compat.js"></script>
+    <script defer src="/__/firebase/10.12.5/firebase-messaging-compat.js"></script>
+    <script defer src="/__/firebase/10.12.5/firebase-storage-compat.js"></script>
+    <script defer src="/__/firebase/10.12.5/firebase-analytics-compat.js"></script>
+    <script defer src="/__/firebase/10.12.5/firebase-remote-config-compat.js"></script>
+    <script defer src="/__/firebase/10.12.5/firebase-performance-compat.js"></script>
+    <!-- 
+      initialize the SDK after all desired features are loaded, set useEmulator to false
+      to avoid connecting the SDK to running emulators.
+    -->
+    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+
+    <style media="screen">
+      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
+      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
+      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
+      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
+      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
+      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
+      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
+      @media (max-width: 600px) {
+      }
+    </style>
+  </head>
+  <body>
+<header>
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-4">
+                <div class="menu-icon" onclick="toggleMenu()">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </div>
+
+            <div class="col text-left">
+                <h1>PSCphotopro</h1>
+            </div>
+        </div>
+    </div>
+</header>
+    
+    <nav id="nav">
+        <button id="navClose">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>               
+            </svg>
+        </button><br>
+        <div class="navContents">
+            <p id="navHome">Home</p>
+            <hr>
+            <p id="navInstructions">Instructions</p>
+            <hr>
+            <p id="navExample">Example demonstration</p>
+            <hr>
+            <p onclick="window.location.href = 'Privacy&policy.html';">Privacy and policy</p>
+        </div>
+        <p class="navfooterTxt">&copy;PSCphotopro</p>
+    </nav>
+    
+    <div id="example">
+        <button id="exampleClose">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>               
+            </svg>
+        </button>
+        <h1>Photograph Example</h1>
+        <img src="https://i.ibb.co/hCJb3hH/Alice-20240814-231352-0000.png" alt="Alice-20240814-231352-0000">
+        <ul>
+            <li>The photograph should clearly show the shoulders and face, with the face being clear and legible.</li>
+            <li>The user should fill in their name as it appears on their Kerala PSC profile and include the date the photo was taken.</li>
+            <li>The background should be light and clean.</li>
+        </ul>
+        <h1>Autograph Example</h1>
+          <img src="https://i.ibb.co/JjXn77F/20240814-232553-0000.png" alt="20240814-232553-0000">
+        <ul>
+            <li>The autograph should be signed in blue or black ink.</li>
+            <li>Ensure the signature is legible and matches the name provided in the application.</li>
+            <li>The signature should be placed within the designated space and not overlap with other elements.</li>
+        </ul>
+    </div>  
+    
+  <main>
+    <h2 id="welcome-txt">Welcome to the Kerala PSC Photo Maker</h2>
+    <p class="welcome-prgp">Our platform simplifies the process of creating PSC-compliant photographs and autographs. Easily upload your photo or autograph, enter your name and the date it was taken, and download your ready-to-use image. Follow the provided guidelines to ensure your photo and autograph meet all necessary specifications.<a style="color: red;" href="https://www.keralapsc.gov.in/sites/default/files/inline-files/GENENGnew-instructions-to-candidates.pdf" target="_blank">Official instructions of kerala PSC</a></p>
+    <div id="select">
+      <p id="p1">Photograph</p>
+      <p id="p2">Autograph</p>
+    </div>
+    <div id="photograph">
+       <img src="https://i.ibb.co/TTpcV6t/IMG-20240812-084251.jpg" alt="IMG-20240812-084251">
+      <h2>What we do:</h2>
+      <ul>
+        <li><b>Dimensions: </b> 150 pixels wide by 200 pixels high.</li>
+        <li><b>File size: </b>less than 30 KB</li>
+        <li><b>Format: </b>JPG</li>
+        <li><b>Quality: </b>Clear and well-lit, The face and shoulders should be clear and taken in a plain background.</li>
+        <li><b>Details: </b>Ensure the photograph meets the specified size and file size to comply with PSC guidelines.</li>
+      </ul>
+        <b class="privacy">Read our Privacy and Policy :<a href="Privacy&policy.html">Privacy & Policy</a></b>
+        <label class="file-label" for="photographInput">
+            <span class="custom-file-button">Choose Image</span>          
+        </label>
+        <input type="file" accept="image" id="photographInput">
+        <div id="canvas-container">
+      <canvas id="photographcanvas"></canvas>
+        </div>
+      <p id="instruction">For the photograph, you need to include your name as per your PSC profile and the date the photo was taken. Please fill in the input fields as follows:</p> 
+      <label for="name">Name</label>
+      <input type="text" id="name" placeholder="Enter your name" maxlength="20" minlength="3">  
+      <label for="date">Date of photo taken</label>
+      <input type="date" id="date">
+      <button id="downlode-photo">Download photograph</button>
+    </div>
+    <div id="autograph">
+       <img src="https://i.ibb.co/NZhwdX7/Picsart-24-08-12-09-43-39-727.jpg" alt="signature.jpg">
+      <h2>Autograph Requirements:</h2>
+      <ul>
+        <li><b>Dimensions:</b> 150 pixels wide by 100 pixels high</li>
+        <li><b>File size:</b> less than 30 KB</li>
+        <li><b>Format:</b> JPG</li>
+        <li><b>Quality:</b> Clearly visible and legible.</li>
+        <li><b>Details:</b> Autograph should be neatly written and meet the required specifications.</li>        
+      </ul>
+        <b class="privacy">Read our Privacy and Policy :<a href="Privacy&policy.html">Privacy & Policy</a></b>
+        <label class="file-label" for="autographInput">
+            <span class="custom-file-button">Choose Image</span>          
+        </label>
+      <input type="file" accept="image" id="autographInput">
+        <canvas id="autographcanvas"></canvas>
+      <button id="downlode-auto">Downlode autograph</button>
+    </div>
+      
+      <h2 class="accordion-title">FAQ</h2>
+      <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+              <h2 class="accordion-header">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      <b>Q: What is the purpose of the PSCphotopro website?</b>
+                  </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                      <strong>The PSCphotopro website is designed to create photographs and autographs specifically for Kerala PSC (Public Service Commission) applications, adhering to their exact specifications. It allows users to customize dimensions, height, width, and size as required.</strong>
+                  </div>
+              </div>
+          </div>
+          <div class="accordion-item">
+                  <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          <b>Q: What features does PSCphotopro offer?</b>
+                      </button>
+                  </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                      <strong>PSCphotopro is a user-friendly platform that allows for the creation of photographs and autographs in accordance with Kerala PSC requirements. It provides an ad-free experience and offers a straightforward process for generating high-quality images tailored to specific standards.</strong>
+                  </div>
+              </div>
+          </div>
+          <div class="accordion-item">
+              <h2 class="accordion-header">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      <b>Q: Is it free to use?</b>
+                  </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                      <strong>Yes, PSCphotopro is completely free to use, providing high-quality autograph and photograph creation with no cost to the user.</strong>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </main>
+    
+    <footer>
+        <h4>For any inquiries or feedback, please email us at: <br><a href="mailto: PSCphotopro@gmail.com">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-at-fill" viewBox="0 0 16 16">
+                <path d="M2 2A2 2 0 0 0 .05 3.555L8 8.414l7.95-4.859A2 2 0 0 0 14 2zm-2 9.8V4.698l5.803 3.546zm6.761-2.97-6.57 4.026A2 2 0 0 0 2 14h6.256A4.5 4.5 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586zM16 9.671V4.697l-5.803 3.546.338.208A4.5 4.5 0 0 1 12.5 8c1.414 0 2.675.652 3.5 1.671"/>
+                <path d="M15.834 12.244c0 1.168-.577 2.025-1.587 2.025-.503 0-1.002-.228-1.12-.648h-.043c-.118.416-.543.643-1.015.643-.77 0-1.259-.542-1.259-1.434v-.529c0-.844.481-1.4 1.26-1.4.585 0 .87.333.953.63h.03v-.568h.905v2.19c0 .272.18.42.411.42.315 0 .639-.415.639-1.39v-.118c0-1.277-.95-2.326-2.484-2.326h-.04c-1.582 0-2.64 1.067-2.64 2.724v.157c0 1.867 1.237 2.654 2.57 2.654h.045c.507 0 .935-.07 1.18-.18v.731c-.219.1-.643.175-1.237.175h-.044C10.438 16 9 14.82 9 12.646v-.214C9 10.36 10.421 9 12.485 9h.035c2.12 0 3.314 1.43 3.314 3.034zm-4.04.21v.227c0 .586.227.8.581.8.31 0 .564-.17.564-.743v-.367c0-.516-.275-.708-.572-.708-.346 0-.573.245-.573.791"/>              
+            </svg>
+        </a></h4>
+        <p class="copyRight">&copy; 2024 All right reserved!</p>
+        <h3 class="made">Made with &#x1F49B; Jishith</h3>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script defer type="text/javascript" src="main.js" crossorigin="anonymous"></script>
+    <script defer type="text/javascript" src="script.js"></script> 
+    
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const loadEl = document.querySelector('#load');
+        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+        // // The Firebase SDK is initialized and available here!
+        //
+        // firebase.auth().onAuthStateChanged(user => { });
+        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
+        // firebase.firestore().doc('/foo/bar').get().then(() => { });
+        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
+        // firebase.messaging().requestPermission().then(() => { });
+        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
+        // firebase.analytics(); // call to activate
+        // firebase.analytics().logEvent('tutorial_completed');
+        // firebase.performance(); // call to activate
+        //
+        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+
+        try {
+          let app = firebase.app();
+          let features = [
+            'auth', 
+            'database', 
+            'firestore',
+            'functions',
+            'messaging', 
+            'storage', 
+            'analytics', 
+            'remoteConfig',
+            'performance',
+          ].filter(feature => typeof app[feature] === 'function');
+          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
+        } catch (e) {
+          console.error(e);
+          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
+        }
+      });
+    </script>
+  </body>
+</html>

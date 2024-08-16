@@ -1,0 +1,431 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: azure;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  padding: 25px;
+  z-index: 99;
+  box-sizing: border-box;
+  background-color: cornflowerblue;
+  color: whitesmoke;
+  font-family: 'Roboto Condensed', serif;
+  position: fixed;
+  top: 0;
+  border-bottom: 1.5px solid white;
+  box-shadow: 0px 2px 3px rgba(0, 0, 0.2);
+}
+
+.menu-icon {
+  display: inline-block;
+  padding-right: 40%; 
+  cursor: pointer;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: black;
+  margin: 5px 0;
+  transition: transform 0.3s ease-in-out;
+}
+
+.bar:nth-child(2) {
+  width: 17px;
+  background-color: red;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  margin: 130px 15px 0 15px;
+}
+
+#welcome-txt::first-letter {
+  font-size: 35px;
+  color: red;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap');
+
+.welcome-prgp {
+  color: darkblue;
+  letter-spacing: 3;
+  line-height: 30px;
+  font-size: 18px;
+  font-family: 'Mukta', serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+#select {
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  position: sticky;
+  top: 100px;
+  z-index: 99;
+}
+
+#select p {
+  color: white;
+  padding: 10px;
+  background-color: black;
+  transition: border-bottom 0.6s;
+  font-weight: bolder;
+}
+
+#p1 {
+  border-top-left-radius: 10px;
+}
+
+#p2 {
+  border-bottom-right-radius: 10px;
+}
+
+#photograph, #autograph {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: bisque;
+  background-image: radial-gradient(circle, black 5%, transparent 6%);
+  background-size: 20px 20px;
+  background-position: 0 0;
+  background-repeat: repeat;
+  justify-content: center;
+}
+
+#photograph img, #autograph img {
+  width: 150px;
+  height: auto;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+#photograph li, #autograph li {
+  color: black;
+  font-weight: 400;
+  margin-top: 10px;
+}
+
+#photograph ul b, #autograph ul b {
+  color: blue;
+}
+
+#photograph ul li::marker, #autograph ul li::marker {
+  color: red;
+}
+
+#photographInput, #autographInput {
+  display: none;
+}
+
+.custom-file-button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: black;
+  font-weight: 900;
+  background-color: skyblue;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  margin: 30px auto;
+}
+
+.file-label {
+  display: inline-block;
+  cursor: pointer;
+}
+
+#photographcanvas, #autographcanvas {
+  border: 1px solid black;
+  margin: auto;
+  image-rendering: -webkit-optimize-contrast; /* For WebKit browsers */
+    image-rendering: -moz-crisp-edges; /* For Mozilla browsers */
+    image-rendering: -o-crisp-edges; /* For Opera browsers */
+    image-rendering: crisp-edges; /* Standard syntax */
+  text-rendering: optimizeLegibility; /* Ensures legible text rendering */
+    text-rendering: geometricPrecision; /* For high-quality text rendering */
+  transform: scale(1); /* Apply scaling to the canvas */
+  -webkit-font-smoothing: antialiased; /* For WebKit browsers */
+    -moz-osx-font-smoothing: grayscale; /* For Mozilla browsers */
+  image-rendering: smooth; /* Ensure smooth scaling */
+}
+
+#instruction {
+  font-size: 19px;
+  font-weight: 1000;
+  color: black;
+  margin-top: 20px;
+  line-height: 1;
+  letter-spacing: 1px;
+}
+
+input[type="text"], input[type="date"] {
+  width: 100%;
+  height: 35px;
+  border-radius: 7px;
+  outline: none;
+  color: black;
+  margin-bottom: 15px;
+  border: 1px groove red;
+  margin-top: 7px;
+  padding: 10px;
+}
+
+label {
+  color: black;
+  font-weight: 700;
+}
+
+#downlode-photo, #downlode-auto {
+  width: auto;
+  height: auto;
+  margin: auto;
+  background-color: darkslateblue;
+  color: white;
+  font-weight: bold;
+  padding: 20px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+#downlode-photo:hover, #downlode-auto:hover {
+  background-color: magenta;
+  box-shadow: 5px 7px 2px rgba(0, 0, 0, 0.8);
+  transition: background-color 1s;
+}
+
+.accordion-title {
+  margin-top: 30px;
+  text-align: center;
+  color: crimson;
+}
+
+.accordion-button {
+  color: blue;
+}
+
+footer {
+  background-color: #121212;
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  padding: 15px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.copyRight {
+  color: silver;
+  font-weight: 400;
+}
+
+footer h4 {
+  text-align: center;
+  color: silver;
+  padding-bottom: 20px;
+}
+
+footer a {
+  text-decoration: none;
+  color: hotpink;
+}
+
+footer svg {
+  transform: scale(2);
+}
+
+.made {
+  color: white;
+  font-weight: 800;
+}
+
+#canvas-container {
+  position: relative;
+  margin: auto;
+}
+
+#white {
+  position: absolute;
+  width: 100%;
+  height: 45px;
+  background-color: transparent;
+  color: black;
+  bottom: 0;
+  flex-direction: column;
+  align-items: center;
+  font-size: 17.5px;
+}
+
+#photoaken {
+  margin-bottom: 6px;
+}
+
+#nameinput {
+  margin-top: 2px;
+}
+
+nav {
+  width: 0;
+  overflow: hidden;
+  height: 100dvh;
+  background-color: black;
+  padding: 25px;
+  box-sizing: border-box;
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  display: none;
+  cursor: pointer;
+  animation: nav 0.3s ease-out forwards;
+}
+
+nav .close {
+  animation: navclose 0.3 ease-out forwards;
+}
+
+@keyframes nav {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+  
+@keyframes navclose {
+  0% {
+    width: 100%;
+  }
+  100% {
+    width: 0;
+  }
+}
+
+
+#navClose {
+  border: 1px solid aqua;
+  background: none;
+  position: fixed;
+  top: 3%;
+  transform: scale(2);
+  color: white;
+}
+
+.navContents {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  color: white;
+  font-weight: bold;
+  font-size: 26px;
+  font-family: 'Roboto Condensed', sans-serif;
+  text-align: center;
+  margin-top: 10%;
+}
+
+.navContents p {
+  cursor: pointer;
+  user-select: none;
+}
+
+.navfooterTxt {
+  margin-top: 35%;
+  color: white;
+  font-size: 20px;
+  font-weight: bolder;
+  color: silver;
+  text-align: center;
+}
+
+.navfooterTxt:first-letter {
+  color: hotpink; 
+}
+
+.privacy {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: black;
+}
+
+.privacy a {
+  color: hotpink;
+  text-decoration: none;
+}
+
+#example {
+  width: 90%;
+  height: 90%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  background-color: azure;
+  z-index: 9999;
+  display: none;
+  justify-content: center;
+  flex-direction: column;
+  transform: translate(-50%, -50%);
+  border-radius: 20px;
+  box-shadow: 4px 0px 6px rgba(0, 0, 0, 0.6);
+  max-width: 90%;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow-y: scroll;
+  padding-top: 70%;
+  opacity: 0;
+  animation: examplebox 1s ease-out forwards;
+}
+
+@keyframes examplebox {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#example img {
+  width: 130px;
+  margin: 15px auto;
+  border: 1px solid black;
+}
+
+#example ul {
+  font-weight: bold;
+  font-family: 'Roboto Condensed', serif;
+}
+
+#example h1 {
+  margin-top: 5%;
+}
+
+#example button {
+  border: none;
+  background: none;
+  color: black;
+  transform: scale(1.5);
+  margin-left: 90%;
+  cursor: pointer;
+}
